@@ -1,0 +1,61 @@
+header{
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient(#012734, #000e27);
+    overflow: hidden;
+}
+.header__container{
+    display: grid;
+    grid-template-columns: 42% 52%;
+    gap: 6%;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.header__image-bg{
+    background: #003347;
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+
+.header__image-lg{
+    width: 29rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(.3);
+    transition: var(--transition);
+}
+
+.header__image-sm{
+    width: 28rem;
+    height: 28rem;
+    overflow: hidden;
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    transition: var(--transition);
+
+ 
+   
+}
+
+.header__image-sm:hover{
+    opacity: 0;
+
+}
+
+.header__image-lg:hover {
+    filter: saturate(1) brightness(1);
+    border: 1rem solid #003347;
+    top: 0;
+    left: 0;
+    
+   
+}
+
+
+
