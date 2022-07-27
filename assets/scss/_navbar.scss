@@ -1,0 +1,36 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+
+    .nav__container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__toggle-btn{
+        display: none;
+    }
+
+    .nav__logo{
+        width: 5.5rem;
+    }
+
+    .navbar__links{
+        display: flex;
+        gap:4rem;
+
+        
+    }
+
+    
+}
+
