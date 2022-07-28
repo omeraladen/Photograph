@@ -1,5 +1,5 @@
 header{
-    width: 99vw;
+    max-width: 199vw;
     height: 100vh;
     position: relative;
     top: 0;
@@ -72,10 +72,22 @@ header{
     top: 10px;
 
 }
-.header__head p{
-    margin-top: 50px;
+
+.text_sky{
+    width: 70px;
+    margin-left: auto;
+    position: relative;
+    right: 13rem;
+    bottom: 4rem;
+    
+
 }
-/*========================== Frames =========================================*/
+.header__head p{
+    margin-top: 10px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+/*========================== Frames Photos=========================================*/
 .header__frames{
     position: absolute;
     top: 88vh;
@@ -104,4 +116,54 @@ header{
 .header__frames:hover .header__frame:nth-child(2){
      top: 0;
      left: 15rem;
+} 
+
+
+/*========================== Frames contact Button Circular=========================================*/
+.contact__btn{
+    color:var(--color-bg-1);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.header__btn {
+    background: linear-gradient(-30deg, #91462f, #101010, #b30b0b);
+    position:absolute;
+    right: 6%;
+    bottom: -3rem;
+
+}
+.header__btn:hover{
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.3);
+    transform: translateY(-1rem);
+    color: var(--color-bg-1);
+}
+
+.contact__btn i {
+    font-size: 3rem;
+    position: absolute;
+    color: #fff;
+}
+.contact__btn p {
+    font-size: .7rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    animation:spinText 15s linear infinite;
+}
+.contact__btn p span {
+    position: absolute;
+    transform-origin:.4rem 5rem ;
+}
+
+@keyframes spinText {
+    to {
+        transform: rotate(360deg);
+    }
 }
