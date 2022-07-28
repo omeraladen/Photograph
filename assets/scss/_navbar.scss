@@ -32,6 +32,11 @@ nav{
         width: 2.5rem;
     }
 
+    .logo_text{
+       position: relative;
+       right: 18.8%;
+        cursor: pointer;
+    }
     .navbar__links{
         display: flex;
         gap:3rem;

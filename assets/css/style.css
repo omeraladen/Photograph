@@ -111,6 +111,12 @@ nav .nav__logo {
   width: 2.5rem;
 }
 
+nav .logo_text {
+  position: relative;
+  right: 18.8%;
+  cursor: pointer;
+}
+
 nav .navbar__links {
   display: flex;
   gap: 3rem;
@@ -142,8 +148,8 @@ header {
 
 .header__container {
   display: grid;
-  grid-template-columns: 42% 52%;
-  gap: 6%;
+  grid-template-columns: 43% 53%;
+  gap: -1%;
   margin-top: 10rem;
   position: relative;
 }
@@ -183,5 +189,59 @@ header {
   border: 1rem solid #003347;
   top: 0;
   left: 0;
+}
+
+.empty {
+  margin-top: 20px;
+  height: 3.5rem;
+  width: 18rem;
+  background-color: var(--color-bg-2);
+  border-radius: calc(3.5rem / 2);
+  margin-bottom: 3.5rem;
+  box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-bg-4);
+}
+
+.header__tag {
+  position: relative;
+  right: -110%;
+  top: 10px;
+}
+
+.header__head p {
+  margin-top: 50px;
+}
+
+/*========================== Frames =========================================*/
+.header__frames {
+  position: absolute;
+  top: 88vh;
+  right: 64rem;
+  transition: var(--transition);
+}
+
+.header__frame {
+  width: 14rem;
+  border: 0.4rem solid var(--color-bg-3);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transform: rotate(-10deg);
+  transform-origin: bottom left;
+  transition: var(--transition);
+}
+
+.header__frame:nth-child(2) {
+  transform: rotate(20deg);
+  top: -2rem;
+  left: 3rem;
+}
+
+.header__frames:hover .header__frame {
+  transform: rotate(0);
+}
+
+.header__frames:hover .header__frame:nth-child(2) {
+  top: 0;
+  left: 15rem;
 }
 /*# sourceMappingURL=style.css.map */
