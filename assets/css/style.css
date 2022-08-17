@@ -586,49 +586,68 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    background: red;
+  }
   .container {
-    width: var(--container-width-md);
+    width: 92%;
     position: relative;
   }
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  .nav__social {
-    display: flex;
-  }
-  .nav__links {
-    position: absolute;
-    top: 100%;
-    gap: 0;
-    flex-direction: column;
-    right: 0;
+  .container .arrow,
+  .container .nav__socials,
+  .container .nav__search,
+  .container .search_icon,
+  .container .shop_cart {
     display: none;
   }
-  .nav__links li {
+  .container .logo_text {
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+  }
+  .container .navbar__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    perspective: 400px;
+  }
+  .container .navbar__links li {
     height: 5rem;
     box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+    animation: navAnimation 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+    transform-origin: top;
   }
-  .nav__links li a {
-    background: var(--color-bg-4);
+  .container .navbar__links li:first-child {
+    animation-delay: 100ms;
+  }
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  .container .navbar__links li a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 1rem 5rem 1rem 3rem;
-    border-top: 1px solid var(--color-bg-2);
+    border: 1px solid #001e2f;
+    background: #003347;
   }
-  .nav__toggle-btn {
+  .container .nav__toggle-btn {
     display: inline-block;
     font-size: 2rem;
     background: transparent;
+    color: #fff;
     cursor: pointer;
-    color: var(--color-white);
   }
-  #nav__toggle-close {
+  .container #nav__toggle-close {
     display: none;
   }
 }
