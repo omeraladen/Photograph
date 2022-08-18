@@ -1,8 +1,4 @@
 @media screen and (max-width: 1024px) {
-   
-    body{
-        background: red;
-    }
 
     
     .container{
@@ -76,11 +72,222 @@
             display: none;
         }
     }
-   
+// -----------------------------header--------------------------------------
+    header{
+        height: fit-content;
+        padding: 14rem 0 12rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .header__image-bg,
+     .header__image-sm,
+      .header__empty,
+      .header__frames,
+      .contact__btn{
+        display: none;
+    }
+
+    .header__container{
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+        margin: 0;
+    }
+    .header__image-lg{
+        filter: saturate(1) brightness(1);
+        width: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+    }
+    .text_sky{
+        top: -5vw;
+        right: 26vw;
+        width: 6vw;
+        
+        
+    }
+    
+    .header__head h1{
+        font-size: 5vw;
+    }
+    .header__right p{
+       
+        width: 100%;
+        margin-top: -3vw;
+    }
+
+    .header__btn-md{
+        background: linear-gradient(135deg , rgb(220, 43, 43), #3e5765);
+        padding: .6rem 1.6rem;
+        display: inline-block;
+        font-weight: 600;
+        border-radius: .3rem;
+        margin-top: 10px;
+
+    }
+    // ----------------------------- about --------------------------------------
+
+    .about__container{
+    
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+    }
+
+    .about__image-bg, .about__image-sm{
+        display: none;
+    }
+    .about__image-lg{
+        left: 0;
+        top: 0;
+        filter: saturate(1) brightness(1);
+    }
+
+    .about__image:hover .about__image-lg{
+        border: none;
+    }
+    
+    .header__left:hover .header__image-lg{
+        border: none;
+    }
 
 
+    .bubble{
+        display: none;
+    }
+    .about__right{
+        margin: 0;
+    }
+    .about__right p{
+        margin-top: 10px;
+        width: 120%;
+        line-height: 30px;
+        bottom: 0;
+    }
+
+        // ----------------------------- galley --------------------------------------
+
+    #gallery{
+        margin-top: 8rem;
+    }
+    .gallery__container p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .gallery__empty{
+        width: 45vw;
+    }
+    
+      // ----------------------------- galley --------------------------------------
+
+    .exhibitions__head p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .exhibitions__empty{
+        display: none;
+        
+    }
+    .exhibitions__title{
+        font-size: 6vw;
+        align-items: center;
+    }
+  
+    .footer__title{
+        font-size: 7vw;
+    }
+    .footer__head a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    h1,h2{
+        font-size: 2rem;
+        line-height: 1.3;
+        color: #fff;
+    }
+    header{
+        margin-top: 5rem;
+        
+        padding: 0;
+        padding-bottom: 6rem;
+    }
+    .header__container{
+        
+        grid-template-columns:1fr ;
+        gap: 1rem;
+        text-align: center  ;
+    }
+
+    .header__image-lg{
+        
+        width: 80%;
+        height: 20rem;
+        margin: 0 auto;
+        overflow: hidden;
+       
+    }
+    .about__container{
+        
+        grid-template-columns:1fr ;
+        gap: 1rem;
+       
+    }
+    .about__container p{
+        margin-left: 20px;
+    }
+
+    #exhibitions{
+        
+        grid-template-columns:1fr ;
+        gap: 1rem;
+     
+    }
+
+    .gallery__empty{
+        display: none;
+    }
+ 
 }
 
 
+@media (min-width:1025px) and (max-width: 1560px) {
 
+    .header__frames,
+      .contact__btn,
+      .bubble{
+        display: none;
+      }
+    .header__container{
+        .header__image-sm , .header__image-lg{
+            width: 30vw;
+            padding-right: 30px;
+        }
 
+        
+    }
+
+    .about__container{
+        grid-template-columns: 30% 45%;
+        gap: 6%;
+        margin: 0;
+    }
+
+    .gallery__title{
+        margin-bottom: 30px;
+    }
+    .exhibitions__title{
+        margin-bottom: 30px;
+    }
+    #exhibitions{
+        overflow: hidden;
+    }
+    
+
+    
+}

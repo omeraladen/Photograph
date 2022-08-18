@@ -18,8 +18,8 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView:1,
     spaceBetween:20, // mobile view small Screen
     pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,      
+        el: ".swiper-pagination",
+        clickable: true,    
     },
     breakpoints:{
         599: {
@@ -33,6 +33,10 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+
+   
+     
+ 
 
 // Toggle Nav
 

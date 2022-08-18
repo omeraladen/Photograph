@@ -1,6 +1,6 @@
 :root{
     --color-primary:#ff7b02;
-    --color-primary-variant:#e5affd;
+    --color-primary-variant:#ca7b35;
     --color-bg-1:#000e27;
     --color-bg-2:#001e2f;
     --color-bg-3:#012734;
@@ -33,12 +33,22 @@
     text-decoration:none ;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background: rgba(56, 47, 38, 0.2);
+}
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: #615c5c;
+    border-radius: 0.25rem;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
+    background:url(../images/plain-dark-blue-fabric-textured-background_53876-129743.jpg);
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-bg-3);  
+    background-color: var(--color-bg-3) ;  
     color: var(--color-light);
     line-height: 1.7;
 }
